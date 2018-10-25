@@ -2,7 +2,7 @@
   "name": "react-device-frame",
   "version": "2.1.4",
   "description": "Preview website on a device frame",
-  "main": "react-device-frame.js",
+  "main": "build/device",
   "scripts": {
     "build": "babel src -d build",
     "lint": "eslint src/** --fix ; exit 0",
