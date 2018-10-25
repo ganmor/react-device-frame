@@ -1,20 +1,24 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = require("prop-types");
+var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-require("./devices.css");
+var _contentFrame = require('./content-frame');
+
+var _contentFrame2 = _interopRequireDefault(_contentFrame);
+
+require('./devices.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25,50 +29,50 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Iphone5c = function (_Component) {
-  _inherits(Iphone5c, _Component);
+	_inherits(Iphone5c, _Component);
 
-  function Iphone5c() {
-    _classCallCheck(this, Iphone5c);
+	function Iphone5c() {
+		_classCallCheck(this, Iphone5c);
 
-    return _possibleConstructorReturn(this, (Iphone5c.__proto__ || Object.getPrototypeOf(Iphone5c)).apply(this, arguments));
-  }
+		return _possibleConstructorReturn(this, (Iphone5c.__proto__ || Object.getPrototypeOf(Iphone5c)).apply(this, arguments));
+	}
 
-  _createClass(Iphone5c, [{
-    key: "render",
-    value: function render() {
-      var color = void 0;
-      this.props.color ? color = this.props.color : color = "green";
+	_createClass(Iphone5c, [{
+		key: 'render',
+		value: function render() {
+			var color = void 0;
+			this.props.color ? color = this.props.color : color = 'green';
 
-      return _react2.default.createElement(
-        "div",
-        {
-          className: "marvel-device iphone5c " + this.props.orientation + " " + color
-        },
-        _react2.default.createElement("div", { className: "top-bar" }),
-        _react2.default.createElement("div", { className: "sleep" }),
-        _react2.default.createElement("div", { className: "volume" }),
-        _react2.default.createElement("div", { className: "camera" }),
-        _react2.default.createElement("div", { className: "sensor" }),
-        _react2.default.createElement("div", { className: "speaker" }),
-        _react2.default.createElement(
-          "div",
-          { className: "screen" },
-          _react2.default.createElement("iframe", { src: this.props.site })
-        ),
-        _react2.default.createElement("div", { className: "home" }),
-        _react2.default.createElement("div", { className: "bottom-bar" })
-      );
-    }
-  }]);
+			return _react2.default.createElement(
+				'div',
+				{
+					className: 'marvel-device iphone5c ' + this.props.orientation + ' ' + color
+				},
+				_react2.default.createElement('div', { className: 'top-bar' }),
+				_react2.default.createElement('div', { className: 'sleep' }),
+				_react2.default.createElement('div', { className: 'volume' }),
+				_react2.default.createElement('div', { className: 'camera' }),
+				_react2.default.createElement('div', { className: 'sensor' }),
+				_react2.default.createElement('div', { className: 'speaker' }),
+				_react2.default.createElement(
+					'div',
+					{ className: 'screen' },
+					_react2.default.createElement(_contentFrame2.default, this.props)
+				),
+				_react2.default.createElement('div', { className: 'home' }),
+				_react2.default.createElement('div', { className: 'bottom-bar' })
+			);
+		}
+	}]);
 
-  return Iphone5c;
+	return Iphone5c;
 }(_react.Component);
 
 exports.default = Iphone5c;
 
 
 Iphone5c.propTypes = {
-  color: _propTypes2.default.string,
-  site: _propTypes2.default.string,
-  orientation: _propTypes2.default.string
+	color: _propTypes2.default.string,
+	site: _propTypes2.default.string,
+	orientation: _propTypes2.default.string
 };

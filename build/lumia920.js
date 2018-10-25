@@ -1,20 +1,24 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+	value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = require("prop-types");
+var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-require("./devices.css");
+var _contentFrame = require('./content-frame');
+
+var _contentFrame2 = _interopRequireDefault(_contentFrame);
+
+require('./devices.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25,46 +29,46 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Lumia920 = function (_Component) {
-  _inherits(Lumia920, _Component);
+	_inherits(Lumia920, _Component);
 
-  function Lumia920() {
-    _classCallCheck(this, Lumia920);
+	function Lumia920() {
+		_classCallCheck(this, Lumia920);
 
-    return _possibleConstructorReturn(this, (Lumia920.__proto__ || Object.getPrototypeOf(Lumia920)).apply(this, arguments));
-  }
+		return _possibleConstructorReturn(this, (Lumia920.__proto__ || Object.getPrototypeOf(Lumia920)).apply(this, arguments));
+	}
 
-  _createClass(Lumia920, [{
-    key: "render",
-    value: function render() {
-      var color = void 0;
-      this.props.color ? color = this.props.color : color = "yellow";
+	_createClass(Lumia920, [{
+		key: 'render',
+		value: function render() {
+			var color = void 0;
+			this.props.color ? color = this.props.color : color = 'yellow';
 
-      return _react2.default.createElement(
-        "div",
-        {
-          className: "marvel-device lumia920 " + this.props.orientation + " " + color
-        },
-        _react2.default.createElement("div", { className: "top-bar" }),
-        _react2.default.createElement("div", { className: "volume" }),
-        _react2.default.createElement("div", { className: "camera" }),
-        _react2.default.createElement("div", { className: "speaker" }),
-        _react2.default.createElement(
-          "div",
-          { className: "screen" },
-          _react2.default.createElement("iframe", { src: this.props.site })
-        )
-      );
-    }
-  }]);
+			return _react2.default.createElement(
+				'div',
+				{
+					className: 'marvel-device lumia920 ' + this.props.orientation + ' ' + color
+				},
+				_react2.default.createElement('div', { className: 'top-bar' }),
+				_react2.default.createElement('div', { className: 'volume' }),
+				_react2.default.createElement('div', { className: 'camera' }),
+				_react2.default.createElement('div', { className: 'speaker' }),
+				_react2.default.createElement(
+					'div',
+					{ className: 'screen' },
+					_react2.default.createElement(_contentFrame2.default, this.props)
+				)
+			);
+		}
+	}]);
 
-  return Lumia920;
+	return Lumia920;
 }(_react.Component);
 
 exports.default = Lumia920;
 
 
 Lumia920.propTypes = {
-  color: _propTypes2.default.string,
-  site: _propTypes2.default.string,
-  orientation: _propTypes2.default.string
+	color: _propTypes2.default.string,
+	site: _propTypes2.default.string,
+	orientation: _propTypes2.default.string
 };
