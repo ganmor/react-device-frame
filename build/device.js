@@ -4,6 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require("react");
@@ -90,71 +92,71 @@ var Device = function (_Component) {
           orientation = void 0;
       this.props.landscape ? orientation = "landscape" : orientation = "";
 
-      var iphonex = _react2.default.createElement(_iphonex2.default, {
+      var iphonex = _react2.default.createElement(_iphonex2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var iphone8 = _react2.default.createElement(_iphone2.default, {
+      }, this.props));
+      var iphone8 = _react2.default.createElement(_iphone2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var iphone8plus = _react2.default.createElement(_iphone8plus2.default, {
+      }, this.props));
+      var iphone8plus = _react2.default.createElement(_iphone8plus2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var iphone5s = _react2.default.createElement(_iphone5s2.default, {
+      }, this.props));
+      var iphone5s = _react2.default.createElement(_iphone5s2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var iphone5c = _react2.default.createElement(_iphone5c2.default, {
+      }, this.props));
+      var iphone5c = _react2.default.createElement(_iphone5c2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var iphone4s = _react2.default.createElement(_iphone4s2.default, {
+      }, this.props));
+      var iphone4s = _react2.default.createElement(_iphone4s2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var ipad = _react2.default.createElement(_ipad2.default, {
+      }, this.props));
+      var ipad = _react2.default.createElement(_ipad2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var macbookpro = _react2.default.createElement(_macbookpro2.default, {
+      }, this.props));
+      var macbookpro = _react2.default.createElement(_macbookpro2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var htcone = _react2.default.createElement(_htcone2.default, {
+      }, this.props));
+      var htcone = _react2.default.createElement(_htcone2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var nexus5 = _react2.default.createElement(_nexus2.default, {
+      }, this.props));
+      var nexus5 = _react2.default.createElement(_nexus2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var lumia920 = _react2.default.createElement(_lumia2.default, {
+      }, this.props));
+      var lumia920 = _react2.default.createElement(_lumia2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var galaxys5 = _react2.default.createElement(_galaxys2.default, {
+      }, this.props));
+      var galaxys5 = _react2.default.createElement(_galaxys2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
-      var galaxynote8 = _react2.default.createElement(_galaxynote2.default, {
+      }, this.props));
+      var galaxynote8 = _react2.default.createElement(_galaxynote2.default, _extends({
         color: this.props.color,
         orientation: orientation,
         site: this.props.url
-      });
+      }, this.props));
 
       if (type === "iphone-x") {
         return iphonex;

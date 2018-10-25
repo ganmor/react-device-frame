@@ -23,91 +23,104 @@ export default class Device extends Component {
       <Iphonex
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const iphone8 = (
       <Iphone8
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const iphone8plus = (
       <Iphone8plus
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const iphone5s = (
       <Iphone5s
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const iphone5c = (
       <Iphone5c
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const iphone4s = (
       <Iphone4s
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const ipad = (
       <Ipad
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const macbookpro = (
       <Macbookpro
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const htcone = (
       <Htcone
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const nexus5 = (
       <Nexus5
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const lumia920 = (
       <Lumia920
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const galaxys5 = (
       <Galaxys5
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
     const galaxynote8 = (
       <Galaxynote8
         color={this.props.color}
         orientation={orientation}
-        site={this.props.url}
+				site={this.props.url}
+				{...this.props}
       />
     );
 
