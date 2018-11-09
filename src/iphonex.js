@@ -10,10 +10,6 @@ import {
 
 import { StyleSheet, css } from "aphrodite";
 
-const palette = {
-  transparent: "rgba(255, 255, 255, 0.1)"
-};
-
 const getStyleSheet = (proportion = 1, color = "black") => {
   const applyProportion = getProportionApplier(proportion);
   const shades = mainPalette[color];
@@ -230,7 +226,7 @@ export default class Iphonex extends Component {
         </div>
         <div className={css(sheet.innerShadow)} />
         <div className={css(mainSheet.screen, sheet.screen, sheet.background)}>
-          <iframe src={this.props.site} />
+          <ContentFrame {...this.props} />
         </div>
       </div>
     );
