@@ -68,7 +68,7 @@ var Iphonex = function (_Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'screen' },
-					_react2.default.createElement('iframe', { src: this.props.site })
+					_react2.default.createElement(_contentFrame2.default, this.props)
 				)
 			);
 		}
