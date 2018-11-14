@@ -27,7 +27,7 @@ export default class Iphonex extends Component {
 				</div>
 				<div className="inner-shadow" />
 				<div className="screen">
-					<iframe src={this.props.site} />
+					<ContentFrame {...this.props} />
 				</div>
 			</div>
 		);
