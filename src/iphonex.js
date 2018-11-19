@@ -195,10 +195,10 @@ const getStyleSheet = (proportion = 1, color = "black") => {
       }
     },
     background: {
-      background: "#ff268e",
-      background:
-        "-webkit-gradient(linear, left top, left bottom, from(#ff268e), to(#ff694f))",
-      background: "linear-gradient(to bottom, #ff268e 0%, #ff694f 100%)"
+			height: 'calc(100% - 20px) !important',
+			paddingtTop: '20px',
+			backgroundColor: 'white !important',
+			background: 'white !important'
     }
   });
 };
